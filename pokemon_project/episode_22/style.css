@@ -1,1 +1,10 @@
 /* CSS for Episode 22 */
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
