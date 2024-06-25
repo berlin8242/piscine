@@ -1,1 +1,8 @@
 /* CSS for Episode 33 */
+.container {
+    display: flex;
+}
+.column {
+    flex: 50%;
+    padding: 10px;
+}

@@ -4,28 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .flex-container {
-          display: flex;
-          background-color: DodgerBlue;
-        }
-        
-        .flex-container > div {
-          background-color: #f1f1f1;
-          margin: 10px;
-          padding: 20px;
-          font-size: 30px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
 <h1>Create a Flex Container</h1>
 
-<div class="flex-container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>  
+<div class="container">
+  <div class="column" style="background-color:lightblue;">
+      Colonne 1
+  </div>
+  <div class="column" style="background-color:lightgreen;">
+      Colonne 2
+  </div>
 </div>
     
 <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>

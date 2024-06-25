@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-<h1>CSS Animation</h1>
-
-<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
-
-<div class="animated"></div>
+    <?php
+    $hour = date(10);
+        if ($hour < 12) {
+    echo "Good morning!";
+    } elseif ($hour < 18) {
+    echo "Good afternoon!";
+    } else {
+    echo "Good evening!";
+    }
+    ?>
 
 </body>
 </html>

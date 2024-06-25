@@ -1,1 +1,27 @@
 /* CSS for Episode 40 */
+.responsive-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+.responsive-table th, .responsive-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.responsive-table th {
+    background-color: #f2f2f2;
+}
+@media screen and (max-width: 600px) {
+    .responsive-table thead {
+        display: none;
+    }
+    .responsive-table td {
+        display: block;
+        width: 100%;
+    }
+    .responsive-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}

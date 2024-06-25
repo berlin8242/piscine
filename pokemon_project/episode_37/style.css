@@ -1,1 +1,12 @@
 /* CSS for Episode 37 */
+.transition {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s, height 2s, transform 2s;
+}
+.transition:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
