@@ -1,1 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="budgetForm">
+        <input type="text" id="income" placeholder="Income"><br>
+        <input type="text" id="expense" placeholder="Expense"><br>
+        <button type="button" onclick="calculateBudget()">Calculate</button>
+    </form>
+    <div id="budgetResult">
+
+    </div>
+    <script>
+        function calculateBudget() {
+            var income = parseFloat(document.getElementById("income").value) || 0;
+            var expense = parseFloat(document.getElementById("expense").value) || 0;
+            var total = income - expense;
+            document.getElementById("budgetResult").innerHTML = "Total: $" + total;
+        }
+    </script>
+</body>
+</html>

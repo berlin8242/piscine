@@ -1,1 +1,11 @@
 /* CSS for Episode 56 */
+.search-container {
+    max-width: 300px;
+    margin: auto;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

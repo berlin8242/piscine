@@ -1,1 +1,29 @@
 /* CSS for Episode 55 */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header'
+      'nav main main aside'
+      'footer footer footer footer';
+    grid-gap: 10px;
+}
+.header {
+    grid-area: header;
+    background-color: lightblue;
+}
+.nav {
+    grid-area: nav;
+    background-color: lightgreen;
+}
+.main {
+    grid-area: main;
+    background-color: lightyellow;
+}
+.aside {
+    grid-area: aside;
+    background-color: lightcoral;
+}
+.footer {
+    grid-area: footer;
+    background-color: lightgray;
+}
