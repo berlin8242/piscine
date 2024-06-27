@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="sidebar">
-        <?php
+<div class="sidebar">
+    <?php
         $day = date("l");
         if ($day == "Monday") {
             echo "Happy Monday!";
@@ -16,7 +16,7 @@
         } else {
             echo "Have a nice day!";
         }
-        ?>
-    </div>
+    ?>
+</div>
 </body>
 </html>

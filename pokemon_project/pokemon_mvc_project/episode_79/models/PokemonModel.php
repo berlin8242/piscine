@@ -1,1 +1,12 @@
-<?php\n// Model code for Episode 79\n?>
+<?php
+  class UserModel {
+      private $data = [
+          ['id' => 1, 'name' => 'John Doe', 'email' => 'john@example.com'],
+          ['id' => 2, 'name' => 'Jane Doe', 'email' => 'jane@example.com'],
+      ];
+
+      public function getAllUsers() {
+          return $data;
+      }
+    }
+?>

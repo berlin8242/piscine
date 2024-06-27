@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-
 <?php
   session_start();
   $_SESSION["username"] = "Johan82";
@@ -16,6 +15,5 @@
 <h2>User Profile</h2>
 <p>Username: <?php echo $_SESSION["username"]; ?></p>
 <p>Email: <?php echo $_SESSION["email"]; ?></p>
-
 </body>
 </html>

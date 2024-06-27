@@ -6,25 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-
-<form id="contactForm" action="contact.php" method="post" onsubmit="return validateForm()">
+<form id="contactForm" action="contact.php" method="POST" onsubmit="return validateForm()">
       Name: <input type="text" name="name" id="name"><br>
       Email: <input type="text" name="email" id="email"><br>
       Message: <textarea name="message" id="message"></textarea><br>
       <input type="submit" value="Submit">
-  </form>
-  <script>
-      function validateForm() {
-          var name = document.getElementById("name").value;
-          var email = document.getElementById("email").value;
-          var message = document.getElementById("message").value;
-          if (name == "" || email == "" || message == "") {
-              alert("All fields must be filled out");
-              return false;
+</form>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (name == "" || email == "" || message == "") {
+            alert("All fields must be filled out");
+            return false;
           }
-          return true;
-      }
-  </script>
+            return true;
+     }
+</script>
 
 <?php
   if ($_SERVER["REQUEST_METHOD"] == "POST") {

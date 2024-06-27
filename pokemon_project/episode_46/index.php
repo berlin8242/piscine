@@ -6,21 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div class="header">
+<div class="header">
     <h1>Welcome to My Website</h1>
     <p>My supercool header</p>
-    </div>
+</div>
     
-    <div class="footer">
+<div class="footer">
     <p>Footer Information</p>
-    </div>
+</div>
 
 <?php include ('header.php'); ?>
 <h1>Welcome to my home page!</h1>
 <p>Some text.</p>
 <p>Some more text.</p>
 <?php include ('footer.php'); ?>
-
 </body>
 </html>

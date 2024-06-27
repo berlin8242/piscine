@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="badge" id="myBadge" data-count="1">Notifications</div>
 <button onclick="increaseBadgeCount()">Increase</button>
+
 <script>
     function increaseBadgeCount() {
     var badge = document.getElementById("myBadge");
@@ -17,6 +17,5 @@
     badge.setAttribute("data-count", count + 1);
     }
 </script>
-
 </body>
 </html>

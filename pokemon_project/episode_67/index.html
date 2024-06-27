@@ -6,21 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="budgetForm">
-        <input type="text" id="income" placeholder="Income"><br>
-        <input type="text" id="expense" placeholder="Expense"><br>
-        <button type="button" onclick="calculateBudget()">Calculate</button>
-    </form>
-    <div id="budgetResult">
+<form id="budgetForm">
+    <input type="text" id="income" placeholder="Income"><br>
+    <input type="text" id="expense" placeholder="Expense"><br>
+    <button type="button" onclick="calculateBudget()">Calculate</button>
+</form>
 
-    </div>
-    <script>
-        function calculateBudget() {
-            var income = parseFloat(document.getElementById("income").value) || 0;
-            var expense = parseFloat(document.getElementById("expense").value) || 0;
-            var total = income - expense;
-            document.getElementById("budgetResult").innerHTML = "Total: $" + total;
-        }
-    </script>
+<div id="budgetResult">
+</div>
+
+<script>
+    function calculateBudget() {
+        var income = parseFloat(document.getElementById("income").value) || 0;
+        var expense = parseFloat(document.getElementById("expense").value) || 0;
+        var total = income - expense;
+        document.getElementById("budgetResult").innerHTML = "Total: $" + total;
+    }
+</script>
 </body>
 </html>

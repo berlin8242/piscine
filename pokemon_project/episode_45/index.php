@@ -6,8 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-
-    <?php
+<?php
     $hour = date(10);
         if ($hour < 12) {
     echo "Good morning!";
@@ -16,7 +15,6 @@
     } else {
     echo "Good evening!";
     }
-    ?>
-
+?>
 </body>
 </html>
